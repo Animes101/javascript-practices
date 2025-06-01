@@ -104,6 +104,93 @@
 // var out=hello.concat(hi);
 // console.log(out);
 
-var name1='Animes Barman is very good';
-var result = name1.slice(0,5);
-console.log(result);
+// var name1='Animes Barman is very good';
+// var result = name1.slice(0,5);
+// console.log(result);
+
+//==12 arithmetic and assigment operator
+
+//arithmetic operator==+,-,*,/,%(modulus),**(exponent) ,++,--
+
+//asigment operator== =,-=,+=,*=,/=,%=,**=
+
+// var x=30;
+// x+=20;
+
+// console.log(x);
+
+// var number=prompt('enter your number');
+// var number2=prompt('enter your number 2');
+
+// number=parseInt(number,10);
+// number2=parseInt(number2,10);
+
+
+// var sum=number + number2;
+
+// document.write('total'+sum);
+
+// var subc=number - number2;
+
+// document.write('total'+subc);
+
+//==15tempreature comvert
+
+// var farn=parseFloat(prompt('enter farhentNumber'))
+// var  cels=(farn-32) * (5/9);
+
+// document.write('celcies'+ cels);
+
+
+//==Logica Operator
+
+//relational operator==  ->,>=,<,<=,==,===,!= !==
+
+// Logica operator == &,||,!,
+
+// console.log(40>50);
+
+// console.log(50<20);
+// console.log(20<=20)
+// console.log(40==40);
+// console.log(40=='40');
+// console.log(60==='50');
+
+// console.log(50!=40);
+// console.log(90!= 90);
+
+
+// console.log(50> 20 && 50>90);
+
+// console.log(40==40 || 40!=30);
+
+
+//==19 control statement if,else if,else
+
+// if(!90==90){
+//   console.log('ok');
+// }else{
+//   console.log('not')
+// }
+
+// if(50>=50 && 30==='30'){
+//   console.log('yes')
+
+// }else{
+//   console.log('no')
+// }
+
+//==20 letter grade program
+
+var examMark=prompt('Enter your Mark');
+
+if(examMark>80 && examMark <90){
+  document.write('A+  payaca')
+}else if(examMark<33 && examMark>10){
+  document.write('fail koraca')
+}else if(examMark == 100){
+  document.write('full mark pyaca')
+}else{
+  document.write('exam dai ni')
+}
+
