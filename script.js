@@ -182,15 +182,47 @@
 
 //==20 letter grade program
 
-var examMark=prompt('Enter your Mark');
+// var examMark=prompt('Enter your Mark'); 
 
-if(examMark>80 && examMark <90){
-  document.write('A+  payaca')
-}else if(examMark<33 && examMark>10){
-  document.write('fail koraca')
-}else if(examMark == 100){
-  document.write('full mark pyaca')
-}else{
-  document.write('exam dai ni')
-}
+// if(examMark>80 && examMark <90){
+//   document.write('A+  payaca')
+// }else if(examMark<33 && examMark>10){
+//   document.write('fail koraca')
+// }else if(examMark == 100){
+//   document.write('full mark pyaca')
+// }else{
+//   document.write('exam dai ni')
+// }
 
+
+//==24 switch -switch,case,break,default
+
+// var digit=prompt();
+// switch(digit){
+
+//   case '0':
+//     document.write('zero');
+//     break
+//   case '1':
+//     document.write('one');
+//     break
+//   case '3':
+//     document.write('three');
+//     break
+
+//     default: 'not found'
+
+// }
+
+//==25 loop for loop
+
+// for(var x=2;x<= 100;x++){
+
+//   console.log('prid ' + x++)
+
+// }
+// for(var x=1;x<= 100;x++){
+
+//   console.log('prid ' + x++)
+
+// }
