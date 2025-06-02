@@ -411,38 +411,105 @@
 //==38 tow dimontional arrya
 
 
-function hiscStudent(number){
+// function hiscStudent(number){
   
-  var higherStudent=number[0][0];
-  var higherScore=number[0][1];
+//   var higherStudent=number[0][0];
+//   var higherScore=number[0][1];
 
 
-  for(var x=1; x<number.length; x++){
+//   for(var x=1; x<number.length; x++){
 
 
-    if(higherScore<number[x][1]){
-      higherScore=number[x][1];
-      higherStudent=number[x][0];
-    }
+//     if(higherScore<number[x][1]){
+//       higherScore=number[x][1];
+//       higherStudent=number[x][0];
+//     }
 
-  }
-  return higherStudent;
+//   }
+//   return higherStudent;
   
+// }
+
+// var towArray=[
+//   ['animes',70],
+//   ['jion',1000],
+//   ['sonali',4000]
+// ]
+
+
+// console.log(hiscStudent(towArray));
+
+
+//object & Constraction
+
+
+
+// var student={
+//   name:'animes',
+//   age:23,
+//   lang:['bangla ','english']
+// }
+
+// function studentList(name,age,lang){
+
+//   this.name=name;
+//   this.age=age;
+//   this.lang=lang;
+
+//   this.SingleStudent=function(){
+//     console.log(this.name);
+//     console.log(this.age);
+//     console.log(this.lang);
+
+//   }
+
+
+// }
+
+
+// var student1=new studentList('animes',23,['english','bangla']);
+
+// var student2=new studentList('priyanka',20,['tamil','hindi']);
+// var student4=new studentList('animes',23,['english','bangla']);
+
+// var student3=new studentList('priyanka',20,['tamil','hindi']);
+
+// student1.SingleStudent();
+// student2.SingleStudent();
+// student3.SingleStudent();
+// student4.SingleStudent();
+
+// console.log(Math.floor(3.2));
+// console.log(Math.ceil(5.2));
+// console.log(Math.max(20,30,50,10,10,20,1100,0,));
+// console.log(Math.round(3.0));
+// console.log(Math.round(5.6))
+
+// console.log(Math.random());
+
+// console.log(Math.floor(Math.random()*11)+10);
+
+var won=0;
+var lost=0;
+
+for(var i=0; i<4;i++){
+
+var gussNumber=parseFloat(prompt('enter your guss number'));
+
+var randomNumber=Math.floor(Math.random()*4)+1;
+
+if(gussNumber===randomNumber){
+  won++
+  
+}else{
+  lost++
 }
 
-var towArray=[
-  ['animes',70],
-  ['jion',1000],
-  ['sonali',4000]
-]
+}
 
+document.write('wind='+won);
 
-console.log(hiscStudent(towArray));
-
-
-
-
-
+document.write('lost='+lost);
 
 
 
