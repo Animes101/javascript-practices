@@ -226,3 +226,66 @@
 //   console.log('prid ' + x++)
 
 // }
+
+// var x=1;
+
+// while(x<=40){
+//   console.log(x)
+
+//   x++
+// }
+
+// var i=0;
+
+// do{
+
+//   console.log('do while')
+//   i++
+
+// }while(i<=90){
+
+// }
+
+//==29 break and continue
+
+// for(var x=0; x<=100; x++){
+//   if(x === 10){
+//     continue;
+//   }
+
+//   console.log(x);
+// }
+
+//23 ternary operator
+
+// var x=500;
+
+//  x=x >1000 ? 'positive': 'negitive';
+
+// console.log(x);
+
+//==32 function traditional
+
+// function display(num,num2){
+//   var result =num*num2;
+//   return result;
+// }
+
+// console.log(display(12,50))
+
+// function IFFE
+
+(function display(){
+  
+  document.write('hello world');
+})
+
+
+
+
+
+
+
+
+
+
