@@ -275,10 +275,188 @@
 
 // function IFFE
 
-(function display(){
+// (function display(message){
   
-  document.write('hello world');
-})
+//   document.write('hello world this is Iffe function'+ ' '+ message);
+// })('ok');
+
+
+// function expression
+
+// var display=function helloWorld(m1,m2){
+//      var sum=m1 + m2;
+
+//      return sum;
+// }
+
+// var me1=parseFloat(prompt('ender your number'));
+// var me2=parseFloat(prompt('enter your number2'));
+
+
+// document.write(display(me1,me2));
+
+//==34  Array =[collection of variables]
+
+// var student=['jibon','lima ', 'bati','ripon','sopon', 'joy','sonjoy'];
+// var studentMore=['purna','sonali'];
+
+// var totalStudent=student.concat(studentMore);
+// console.log(totalStudent);
+
+// console.log(student.length);
+
+// student.push('anamika');
+
+// console.log(student);
+// console.log(student[4]);
+
+
+//==35 array loop
+
+// var number=[1,2,3,4,5,6,7,8,9,10,11];
+
+// var sum=0;
+
+
+// for(var i=0; i<11; i++){
+
+//   console.log(number[i]);
+
+//   sum=sum+number[i];
+// }
+
+// console.log(sum);
+
+// var number=[];
+
+// for(var i=0; i<6; i++){
+
+//   number.push(parseInt(prompt('enter your number' +i)));
+
+
+
+// }
+
+// console.log(number);
+
+
+//==34 array Libary Methods
+
+// var studentList=['limon','tarun','korim','sonali','toma','priyanka ','animes'];
+
+// console.log(studentList);
+
+// studentList.shift();   //fist element bad
+
+// console.log(studentList);
+
+// studentList.unshift('animes barman');
+
+// console.log(studentList);
+
+//addind ,remove,
+// studentList.splice(2,0,'koris', 'rohim');
+
+// console.log(studentList);
+
+// // remove
+// studentList.splice(1,2);
+
+// console.log(studentList);
+
+//slice
+
+// var newStudent=studentList.slice(1);
+// console.log(newStudent);
+
+//short 
+
+//  var sortlist=studentList.sort();
+
+//  sortlist.reverse()
+
+//  console.log(sortlist);
+
+// var numbers=[10,55,32,10,20,40,80];
+
+// numbers.sort(function(a,b){
+//   return a - b;
+// });
+
+// console.log(numbers);
+
+//==37 one dimonsonal array
+// console.clear();
+// function hishScore(score){
+
+//   let max=score[0]
+
+//   for(var x=1; x<score.length; x++){
+//     if(max<score[x]);
+//     max=score[x];
+
+//   }
+
+//   return max;
+
+
+
+// }
+
+// var scores=[20,50,60,30,22,10,44,55,66,77];
+// var maxScore=hishScore(scores)
+
+// console.log(maxScore)
+
+//==38 tow dimontional arrya
+
+
+function hiscStudent(number){
+  
+  var higherStudent=number[0][0];
+  var higherScore=number[0][1];
+
+
+  for(var x=1; x<number.length; x++){
+
+
+    if(higherScore<number[x][1]){
+      higherScore=number[x][1];
+      higherStudent=number[x][0];
+    }
+
+  }
+  return higherStudent;
+  
+}
+
+var towArray=[
+  ['animes',70],
+  ['jion',1000],
+  ['sonali',4000]
+]
+
+
+console.log(hiscStudent(towArray));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
