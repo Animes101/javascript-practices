@@ -489,38 +489,70 @@
 
 // console.log(Math.floor(Math.random()*11)+10);
 
-var won=0;
-var lost=0;
+//guss game;
+// var won=0;
+// var lost=0;
 
-for(var i=0; i<4;i++){
+// for(var i=0; i<4;i++){
 
-var gussNumber=parseFloat(prompt('enter your guss number'));
+// var gussNumber=parseFloat(prompt('enter your guss number'));
 
-var randomNumber=Math.floor(Math.random()*4)+1;
+// var randomNumber=Math.floor(Math.random()*4)+1;
 
-if(gussNumber===randomNumber){
-  won++
+// if(gussNumber===randomNumber){
+//   won++
   
-}else{
-  lost++
-}
+// }else{
+//   lost++
+// }
+
+// } 
+
+// document.write('wind='+won);
+
+// document.write('lost='+lost);
+
+
+///==43 date object and method
+
+// var date=new Date();
+
+// console.log(date);
+
+// var year=date.getFullYear();
+// console.log(year);
+
+// var manth=date.getMonth();
+// console.log(manth);
+// var minutes=date.getMinutes();
+// console.log(minutes);
+// var second=date.getSeconds();
+// console.log(second);
+// var daates=date.getDate();
+// console.log(daates);
+// var day=date.getDay();
+// console.log(day);
+// var hours=date.getHours();
+// console.log(hours);
+
+//== 444 budget 
+
+
+
+
+
+
+
+// tracker phase add function
+
+function getuserInfo(message , isNumber=false){
+
+  const userInput=prompt(message);
+
+  return isNumber ? parseFloat(userInput) : userInput;
+
 
 }
-
-document.write('wind='+won);
-
-document.write('lost='+lost);
-
-
-
-
-
-
-
-
-
-
-
 
 
 
