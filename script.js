@@ -592,13 +592,87 @@
 
 // var hiper=document.querySelector('ul li a').innerHTML='ok'
 
-var paraAll=document.querySelectorAll('p')[5].innerHTML='okkkkkkkkkkkkkk';
+// var paraAll=document.querySelectorAll('p')[5].innerHTML='okkkkkkkkkkkkkk';
 
 
 
+// function message(){
+//   var text=document.querySelector('.text');
+//   text.innerHTML='clicked'
+// }
+
+// var img=document.querySelector('#img_view');
+
+// function viewImg1(){
+
+//   img.src='img/1.jpg'
+  
+// }
+
+// function viewImg2(){
+
+//   img.src='img/2.jpg'
+//     img.style.borderRadius="50%"
+
+  
+// }
+
+//create items
+
+// var listNumber=1;
+
+// function createList(){
+//   var list=document.createElement("li");
+//   listNumber = listNumber + 1;
+//   var listText=document.createTextNode(`list ${listNumber}`)
+//   list.appendChild(listText);
+
+//   var ulList=document.querySelector('.list');
+//   ulList.appendChild(list);
+// }
+
+// function deletList(){
+
+// var ulList=document.querySelector('.list');
+// var removeList=document.querySelectorAll('.list li');
+// console.log(removeList);
+
+
+// ulList.removeChild(removeList[--listNumber]);
+
+ 
+// }
+
+
+// var parent=document.querySelector('.parend');
+
+// console.log(parent);
+
+// var child=parent.querySelector('li');
+
+// console.log(child);
 
 
 
+// var names=document.querySelector('.names');
 
 
+// function add_style(){
 
+// var styleadd=names.classList
+
+// styleadd.add('text-center', 'text-3xl', 'font-bold', 'text-red-800')
+
+// }
+
+// function add_remove(){
+//   names.classList.remove('text-center', 'text-3xl', 'font-bold', 'text-red-800')
+// }
+
+
+var btt=document.querySelector('.litsener');
+
+btt.addEventListener('click',function(){
+
+  alert('hello')
+})
