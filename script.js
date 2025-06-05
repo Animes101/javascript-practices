@@ -550,26 +550,49 @@
 
 // sessionStorage
 
-sessionStorage.setItem('password','123456');
+// sessionStorage.setItem('password','123456');
 
-var password=sessionStorage.getItem('password');
+// var password=sessionStorage.getItem('password');
 
-console.log(password);
+// console.log(password);
 
-sessionStorage.removeItem('password');
+// sessionStorage.removeItem('password');
 
-var user={name:'animes', age:'32'};
+// var user={name:'animes', age:'32'};
 
-sessionStorage.setItem('user',JSON.stringify(user))
+// sessionStorage.setItem('user',JSON.stringify(user))
 
-var users=JSON.parse(sessionStorage.getItem('user'));
+// var users=JSON.parse(sessionStorage.getItem('user'));
 
-console.log(users);
-
-
+// console.log(users);
 
 
 
+//DOM===========================================================================
+
+//getElementByID
+
+// var button=document.getElementById('btn');
+// button.innerText='good bye'
+
+//getelementByTagname
+
+// var name=document.getElementsByTagName('h1')[1].innerHTML='getElementByTagname';
+// var classs=document.getElementsByClassName('clas')[0];
+// classs.innerHTML='getElementByClassName'
+
+
+// queueMicrotask
+
+
+// var para=document.querySelector('.para').innerHTML='fine';
+// var heading=document.querySelector('#heading').innerHTML='ok'
+// var tagName=document.querySelector('i').innerHTML='bye'
+
+
+// var hiper=document.querySelector('ul li a').innerHTML='ok'
+
+var paraAll=document.querySelectorAll('p')[5].innerHTML='okkkkkkkkkkkkkk';
 
 
 
