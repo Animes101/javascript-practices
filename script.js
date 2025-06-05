@@ -535,24 +535,37 @@
 // var hours=date.getHours();
 // console.log(hours);
 
-//== 444 budget 
 
 
+//== localstorage and seconstorage
 
 
+// localStorage.setItem("name","animes barman");
+// var name=localStorage.getItem('name')
+
+// name='ripon'
+
+// console.log(name);
 
 
+// sessionStorage
 
-// tracker phase add function
+sessionStorage.setItem('password','123456');
 
-function getuserInfo(message , isNumber=false){
+var password=sessionStorage.getItem('password');
 
-  const userInput=prompt(message);
+console.log(password);
 
-  return isNumber ? parseFloat(userInput) : userInput;
+sessionStorage.removeItem('password');
 
+var user={name:'animes', age:'32'};
 
-}
+sessionStorage.setItem('user',JSON.stringify(user))
+
+var users=JSON.parse(sessionStorage.getItem('user'));
+
+console.log(users);
+
 
 
 
