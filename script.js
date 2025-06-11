@@ -670,9 +670,26 @@
 // }
 
 
-var btt=document.querySelector('.litsener');
+// var btt=document.querySelector('.litsener');
 
-btt.addEventListener('click',function(){
+// btt.addEventListener('mouseover',function(){
 
-  alert('hello')
+//   alert('hello')
+// })
+
+//==56 enet listeners width multiple
+var buttons=document.querySelectorAll('.btn');
+var display=document.querySelector('#show');
+
+for(var i=0; i<buttons.length; i++){
+
+  buttons[i].addEventListener('click',function(){
+
+    var text=this.innerText;
+
+    display.innerHTML=text;
+
+
 })
+
+}
