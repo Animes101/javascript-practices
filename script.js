@@ -801,3 +801,59 @@
 // })
 
 
+
+
+
+//61  ==form submit
+
+// var form=document.querySelector('form')
+// var names=document.querySelector('#myname');
+// var email=document.querySelector('#email');
+// var password=document.querySelector('#pass')
+
+
+// form.addEventListener('submit',formHandler)
+
+// function formHandler(e){
+//   e.preventDefault()
+
+//   var userInfo={
+//     names:names.value,
+//     email:email.value,
+//     password:password.value,
+//   }
+//   console.log(userInfo);
+
+//   names.value='';
+//   email.value='';
+//   password.value='';
+
+
+
+
+// }
+
+
+
+// var video=document.querySelector('video');
+// var message=document.querySelector('div');
+
+// video.addEventListener('pause',handlePush)
+
+
+// function handlePush(){
+//   message.classList.remove('hidden')
+
+
+// }
+
+// video.addEventListener('play',handlePlay)
+
+
+// function handlePlay(){
+//   message.classList.add('hidden')
+
+  
+// }
+
+
