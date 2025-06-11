@@ -678,18 +678,84 @@
 // })
 
 //==56 enet listeners width multiple
-var buttons=document.querySelectorAll('.btn');
-var display=document.querySelector('#show');
+// var buttons=document.querySelectorAll('.btn');
+// var display=document.querySelector('#show');
 
-for(var i=0; i<buttons.length; i++){
+// for(var i=0; i<buttons.length; i++){
 
-  buttons[i].addEventListener('click',function(){
+//   buttons[i].addEventListener('click',function(){
 
-    var text=this.innerText;
+//     var text=this.innerText;
 
-    display.innerHTML=text;
+//     display.innerHTML=text;
 
 
-})
+// })
+// }
+
+
+var btn=document.querySelectorAll('button');
+
+for(var i=0; i<btn.length; i++){
+
+  btn[i].addEventListener('click',function(){
+
+   var text=this.innerText;
+   styleAdd(text);
+   audioPlay(text);
+
+  })
+}
+
+function audioPlay(text){
+  switch(text){
+    case 'play1':
+      var sound=new Audio('/audio/reliable-safe-327618.mp3')
+      sound.play();
+      break;
+
+      case 'play2':
+        var sound=new Audio('/audio/reliable-safe-327618.mp3')
+      sound.play('/audio/riser-hit-sfx-001-289802.mp3');
+      break;
+      case 'play3':
+        var sound=new Audio('/audio/sound-design-elements-sfx-ps-022-302865.mp3')
+        sound.play();
+        break;
+   } 
+}
+
+
+function styleAdd(text){
+
+  var animation=document.querySelector('.'+text);
+
+  animation.classList.add('p-5','bg-black','text-white','text-lg');
+
+  setTimeout(function(){
+
+    animation.classList.remove('p-5','bg-black','text-white','text-lg','rounded-lg');
+
+  },1000)
+
 
 }
+
+document.addEventListener('keypress',function(e){
+
+  var text=e.key;
+
+  console.log(text)
+  if(text=='a'){
+    styleAdd('play1');
+   audioPlay('play1');
+
+  }else if(text=='b'){
+    styleAdd('play2');
+   audioPlay('play2');
+  }else if(text=='c')
+    styleAdd('play3');
+   audioPlay('play3');
+  
+
+})
