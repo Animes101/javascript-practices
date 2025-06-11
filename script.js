@@ -694,68 +694,110 @@
 // }
 
 
-var btn=document.querySelectorAll('button');
+// var btn=document.querySelectorAll('button');
 
-for(var i=0; i<btn.length; i++){
+// for(var i=0; i<btn.length; i++){
 
-  btn[i].addEventListener('click',function(){
+//   btn[i].addEventListener('click',function(){
 
-   var text=this.innerText;
-   styleAdd(text);
-   audioPlay(text);
+//    var text=this.innerText;
+//    styleAdd(text);
+//    audioPlay(text);
 
-  })
-}
+//   })
+// }
 
-function audioPlay(text){
-  switch(text){
-    case 'play1':
-      var sound=new Audio('/audio/reliable-safe-327618.mp3')
-      sound.play();
-      break;
+// function audioPlay(text){
+//   switch(text){
+//     case 'play1':
+//       var sound=new Audio('/audio/reliable-safe-327618.mp3')
+//       sound.play();
+//       break;
 
-      case 'play2':
-        var sound=new Audio('/audio/reliable-safe-327618.mp3')
-      sound.play('/audio/riser-hit-sfx-001-289802.mp3');
-      break;
-      case 'play3':
-        var sound=new Audio('/audio/sound-design-elements-sfx-ps-022-302865.mp3')
-        sound.play();
-        break;
-   } 
-}
-
-
-function styleAdd(text){
-
-  var animation=document.querySelector('.'+text);
-
-  animation.classList.add('p-5','bg-black','text-white','text-lg');
-
-  setTimeout(function(){
-
-    animation.classList.remove('p-5','bg-black','text-white','text-lg','rounded-lg');
-
-  },1000)
+//       case 'play2':
+//         var sound=new Audio('/audio/reliable-safe-327618.mp3')
+//       sound.play('/audio/riser-hit-sfx-001-289802.mp3');
+//       break;
+//       case 'play3':
+//         var sound=new Audio('/audio/sound-design-elements-sfx-ps-022-302865.mp3')
+//         sound.play();
+//         break;
+//    } 
+// }
 
 
-}
+// function styleAdd(text){
 
-document.addEventListener('keypress',function(e){
+//   var animation=document.querySelector('.'+text);
 
-  var text=e.key;
+//   animation.classList.add('p-5','bg-black','text-white','text-lg');
 
-  console.log(text)
-  if(text=='a'){
-    styleAdd('play1');
-   audioPlay('play1');
+//   setTimeout(function(){
 
-  }else if(text=='b'){
-    styleAdd('play2');
-   audioPlay('play2');
-  }else if(text=='c')
-    styleAdd('play3');
-   audioPlay('play3');
+//     animation.classList.remove('p-5','bg-black','text-white','text-lg','rounded-lg');
+
+//   },1000)
+
+
+// }
+
+// document.addEventListener('keypress',function(e){
+
+//   var text=e.key;
+
+//   console.log(text)
+//   if(text=='a'){
+//     styleAdd('play1');
+//    audioPlay('play1');
+
+//   }else if(text=='b'){
+//     styleAdd('play2');
+//    audioPlay('play2');
+//   }else if(text=='c')
+//     styleAdd('play3');
+//    audioPlay('play3');
   
+// })
 
-})
+
+
+
+//==60  change Enent  Input Tag
+
+// var password=document.querySelector('#pass');
+
+// password.addEventListener('change',eventHandler)
+
+// function eventHandler(e){
+
+
+
+
+// }
+
+// var depart=document.querySelector('#dep')
+
+// depart.addEventListener('change',depHandler)
+
+// function depHandler(e){
+
+//   console.log(e.target.value);
+
+// }
+
+
+// var age=document.querySelectorAll('input[name=age]');
+
+
+// Array.from(age).map((items)=>{
+
+//   items.addEventListener('change',function(e){
+
+//     console.log(e.target.checked);
+
+
+//   })
+
+// })
+
+
