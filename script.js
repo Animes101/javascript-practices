@@ -857,3 +857,91 @@
 // }
 
 
+// window.addEventListener("load" ,function(){
+//   console.log('load')
+// })
+// window.addEventListener("unload" ,function(){
+//   console.log('unload')
+// })
+// window.addEventListener("scroll" ,function(){
+//   console.log('scroll')
+
+
+// })
+
+// window.addEventListener("resize" ,function(){
+//   console.log('resize')
+// })
+
+
+// var sum=[]
+
+// var show=document.querySelector('p');
+// var text=document.querySelector('textarea');
+// text.addEventListener('keyup',function(e){
+
+
+//   console.log(e.shiftKey)
+
+
+// })
+
+// var input=document.querySelector('input');
+
+// input.addEventListener('blur',function(){
+//   console.log('bler')
+// })
+
+// input.addEventListener('focus',function(){
+//   console.log('focus')
+// })
+// input.addEventListener('focusin',function(){
+//   console.log('in')
+// })
+// input.addEventListener('focusout',function(e){
+
+//   input.value=e.target.value.toUpperCase();
+//   console.log('out')
+// })
+// var input=document.querySelector('input');
+// var para=document.querySelector('p');
+
+
+
+// para.addEventListener('copy',function(){
+//   console.log('copy')
+// })
+// para.addEventListener('cut',function(){
+//   console.log('cut')
+// })
+// input.addEventListener('paste',function(){
+//   console.log('past')
+// })
+
+var grag=document.querySelector('p');
+var div=document.querySelector('div');
+
+
+grag.addEventListener('dragstart',function(e){
+
+  e.dataTransfer.setData('text',e.target.id);
+
+})
+
+div.addEventListener('dragover',function(e){
+  e.preventDefault();
+
+
+})
+
+div.addEventListener('drop',function(e){
+  var id=e.dataTransfer.getData('text')
+  div.appendChild(document.getElementById(id))
+
+})
+
+
+
+
+
+
