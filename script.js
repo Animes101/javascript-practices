@@ -918,27 +918,103 @@
 //   console.log('past')
 // })
 
-var grag=document.querySelector('p');
-var div=document.querySelector('div');
+// var grag=document.querySelector('p');
+// var div=document.querySelector('div');
 
 
-grag.addEventListener('dragstart',function(e){
+// grag.addEventListener('dragstart',function(e){
 
-  e.dataTransfer.setData('text',e.target.id);
+//   e.dataTransfer.setData('text',e.target.id);
 
-})
+// })
 
-div.addEventListener('dragover',function(e){
-  e.preventDefault();
+// div.addEventListener('dragover',function(e){
+//   e.preventDefault();
 
 
-})
+// })
 
-div.addEventListener('drop',function(e){
-  var id=e.dataTransfer.getData('text')
-  div.appendChild(document.getElementById(id))
+// div.addEventListener('drop',function(e){
+//   var id=e.dataTransfer.getData('text')
+//   div.appendChild(document.getElementById(id))
 
-})
+// })
+
+
+
+//==70  location
+
+// var list=document.querySelector('ul');
+
+// var href=list.children[0].innerText=window.location.href;
+// var origin=list.children[1].innerText=window.location.origin
+// var protocal=list.children[2].innerText=window.location.protocol;
+// var host=list.children[3].innerText=window.location.host;
+// var hostName=list.children[4].innerText=window.location.hostname;
+
+// console.log(window.location.pathname);
+// console.log(window.location.port);
+
+
+//popap box
+
+// var confirmAnser=confirm('do you want');
+
+// if(confirmAnser){
+//   console.log('yer')
+// }else{
+//   console.log('no')
+// }
+
+
+// var yourName=prompt('enter Your Name');
+
+// if(yourName==null || yourName==''){
+
+//   console.log('please enter youyr name')
+
+// }else{
+//   console.log(`wellcome ${yourName}`);
+// }
+
+
+
+// setTimeOut and SetInterval 
+
+
+// setTimeout(() => {
+
+//   console.log('2 s')
+  
+// }, 2000);
+
+
+// setInterval(displayMessage, 1000);
+
+// function displayMessage(){
+//   console.log('hello world')
+// }
+
+
+var startTimeBtn=document.querySelector('button');
+var time=document.querySelector('h1');
+
+startTimeBtn.addEventListener('click',displayClock);
+
+
+function displayClock(){
+  var data=new Date();
+  var hours=data.getHours();
+  var minutes=data.getMinutes();
+  var second=data.getSeconds();
+
+  setInterval(()=>{
+    displayClock()
+
+  },1000)
+
+  time.innerText=`hours${hours}: minutes${minutes}:second${second}`;
+}
 
 
 
