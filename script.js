@@ -996,25 +996,138 @@
 // }
 
 
-var startTimeBtn=document.querySelector('button');
-var time=document.querySelector('h1');
+// var startTimeBtn=document.querySelector('button');
+// var time=document.querySelector('h1');
 
-startTimeBtn.addEventListener('click',displayClock);
+// startTimeBtn.addEventListener('click',displayClock);
 
 
-function displayClock(){
-  var data=new Date();
-  var hours=data.getHours();
-  var minutes=data.getMinutes();
-  var second=data.getSeconds();
+// function displayClock(){
+//   var data=new Date();
+//   var hours=data.getHours();
+//   var minutes=data.getMinutes();
+//   var second=data.getSeconds();
 
-  setInterval(()=>{
-    displayClock()
+//   setInterval(()=>{
+//     displayClock()
 
-  },1000)
+//   },1000)
 
-  time.innerText=`hours${hours}: minutes${minutes}:second${second}`;
-}
+//   time.innerText=`hours${hours}: minutes${minutes}:second${second}`;
+// }
+
+//Error Handlening 
+
+
+// try{
+//   alert(xxx)
+// }catch(e){
+
+//   console.log(e.message)
+//   console.log(e.name)
+// }finally{
+//   console.log('finaly ok')
+// }
+
+// document.querySelector('#submit').addEventListener('click',errorHandle);
+// var showErr=document.querySelector('p');
+
+
+// function errorHandle(e){
+//   e.preventDefault();
+
+//   var numbers=document.querySelector('#text').value ;
+
+//   try{
+//     if(numbers<5){
+//       throw 'numbers is very low'
+//     }else if(numbers>10){
+//       throw 'numbers is very high'
+//     }
+//   }catch(e){
+
+
+//     showErr.innerText=e
+//   }
+
+// }
+
+
+
+// ES6
+
+
+// var x=6;
+
+// if(true){
+// let  x=5
+// console.log(x);
+// }
+
+// console.log(x);
+// let x=0;
+// for(let x=0; x<=100; x++){
+
+//   console.log(x);
+
+// }
+
+// console.log(x)
+
+
+// const manto=5;
+
+// manto=50;
+
+// console.log(manto);
+
+
+// const x=90;
+// const y=80;
+
+// const total=x+y;
+
+// console.log(`total ${total}`);
+
+//es6 function
+// var sum=0;
+
+// const add=(x,y)=>{
+
+// sum =x+y;
+
+
+// }
+
+// add(50,60);
+
+// console.log(sum);
+
+
+// Hosting
+
+// x=90
+
+// console.log(x)
+// var x;  
+
+
+// Default and Rest Parameter
+
+// function message(x='this is default parameters'){
+
+//   console.log(`${x}`)
+// }
+// message('asdfasdf');
+
+
+
+// function message2(x,y,...z){
+//   console.log(`${z} ${x} ${y}`)
+// }
+
+// message2(40,50,30,20,400,3000,)
+
 
 
 
