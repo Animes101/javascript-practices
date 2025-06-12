@@ -1130,7 +1130,87 @@
 
 
 
+// sprade operator
+
+
+// let names=['animes barman','priyanka rani'];
+// let namesOr=['animes','priyanka'];
+// const total=[...names,...namesOr];
+// console.log(total)
 
 
 
 
+// let bio1={
+//   name:'animes',
+//   age:30,
+// }
+
+// let bio2={
+//   fatherName:'purna chandra barman',
+//   motherName:'shephali rani',
+// }
+
+
+// let fullBio={
+//   ...bio1,...bio2
+// }
+
+// console.log(fullBio);
+
+
+
+//object literals
+
+// function studentInfo(name,age){
+
+//   return {
+//     name,
+//     age,
+//   }
+
+
+// }
+
+// console.log(studentInfo('animes',40));
+
+//conssoze
+// let mesage={
+//   body(){
+//     return 'mello world'
+//   }
+
+// }
+
+// console.log(mesage.body())
+
+//for of and for in
+
+
+// let fols=['mango','lichu','katheal','labu'];
+
+// for(let fol of fols){
+//   console.log(fol);
+// }
+
+
+// let students={
+//   name:'anisul islam',
+//   class:12,
+//   age:30,
+//   cgap:3.40
+// }
+
+// for(let x in students){
+//   console.log(`${students[x]} ${x}`)
+// }
+
+
+let numbers=[4,3,4,5,6,,7,7,5,4,3,3,4,54,5,6,66,6,6];
+
+
+numbers.forEach(numbe => {
+
+  console.log(numbe);
+  
+});
