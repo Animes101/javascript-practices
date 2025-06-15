@@ -1369,3 +1369,76 @@
 // }
 
 // studentInfo(student);
+
+
+//==75 find findindex
+
+
+// const numbers=[9,8,7,76,65,54,4,3,3,2,];
+
+
+// const friestTopNumber=numbers.find((item)=>item>20);
+
+// console.log(friestTopNumber);
+
+// const frientIndex=numbers.findIndex((item)=> item>30);
+
+// console.log(frientIndex);
+
+
+
+//startWith ,endsWidth, includes
+
+
+// const names='animes barman';
+
+// const friens=names.startsWith('imes',2);
+
+// console.log(friens);
+
+// const last=names.endsWith('man');
+
+// console.log(last);
+
+
+
+//==77 class
+
+
+// import { ok } from "./module";
+
+// console.log(ok)
+
+
+//class
+
+
+//  class student{
+//   constructor(id,name0){
+//     this.id=id;
+//     this.name0=name0;
+//   }
+
+//   set NameStudent(name){
+//     this.name=name;
+//   }
+//  }
+
+
+//  const student1= new student(44,'animes')
+//  const student2= new student(33,'priyanka')
+
+//  console.log(student1)
+//  console.log(student2)
+
+
+//  student1.NameStudent='harami ho'
+
+//  console.log(student1)
+
+
+//== Synchronous vs Asynchronous
+
+
+
+
