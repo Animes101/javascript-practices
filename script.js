@@ -1206,11 +1206,54 @@
 // }
 
 
-let numbers=[4,3,4,5,6,,7,7,5,4,3,3,4,54,5,6,66,6,6];
+// let numbers=[4,3,4,5,6,,7,7,5,4,3,3,4,54,5,6,66,6,6];
 
+// let square=[];
+// numbers.forEach(numbe => {
 
-numbers.forEach(numbe => {
-
-  console.log(numbe);
+//   square.push(numbe*numbe);
   
-});
+// });
+
+// console.log(square);
+
+
+// ==71 forEach map filter
+
+// let numbers=[4,3,4,5,6,7,7,5,4,3,3,4,54,5,6,66,6,6];
+
+// let squareNumber=numbers.map((item)=>{return item*item});
+
+
+// console.log(squareNumber);
+
+
+// let numbers=[50,5,6,7,8,9,3,2,1];
+
+// let bigNuber=numbers.filter((items)=>{
+//   return items>5
+// })
+
+// console.log(bigNuber);
+
+
+//==72 arrow function
+
+function display(){
+  console.log('display show traditinal function');
+
+
+}
+
+
+const display2=()=>{
+  console.log('arrow function')
+}
+
+display();
+display2();
+
+const dis=(x,y)=> x+y;
+
+console.log(dis(40,50));
+
