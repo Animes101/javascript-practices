@@ -1239,21 +1239,133 @@
 
 //==72 arrow function
 
-function display(){
-  console.log('display show traditinal function');
+// function display(){
+//   console.log('display show traditinal function');
 
 
-}
+// }
 
 
-const display2=()=>{
-  console.log('arrow function')
-}
+// const display2=()=>{
+//   console.log('arrow function')
+// }
 
-display();
-display2();
+// display();
+// display2();
 
-const dis=(x,y)=> x+y;
+// const dis=(x,y)=> x+y;
 
-console.log(dis(40,50));
+// console.log(dis(40,50));
 
+
+// const students = [
+//   {
+//     id: 1,
+//     name: "Ayesha Khatun",
+//     age: 20,
+//     grade: "A",
+//     subjects: ["Math", "Physics", "Biology"]
+//   },
+//   {
+//     id: 2,
+//     name: "Rahim Uddin",
+//     age: 22,
+//     grade: "B+",
+//     subjects: ["English", "History", "Geography"]
+//   },
+//   {
+//     id: 3,
+//     name: "Sadia Islam",
+//     age: 19,
+//     grade: "A+",
+//     subjects: ["Chemistry", "Math", "ICT"]
+//   },
+//   {
+//     id: 4,
+//     name: "Tanvir Hossain",
+//     age: 21,
+//     grade: "B",
+//     subjects: ["Economics", "Accounting", "Management"]
+//   },
+//   {
+//     id: 5,
+//     name: "Nusrat Jahan",
+//     age: 20,
+//     grade: "A-",
+//     subjects: ["Bangla", "English", "Sociology"]
+//   }
+// ];
+
+
+
+
+
+// function display(){
+
+//   return students.filter((item)=> {
+//     return item.age >20;
+//   }).map((stu)=>{ 
+//     return stu.name;
+//   });
+
+  
+// }
+
+// console.log(display())
+
+// const display=()=> students.filter((item)=> item.age >20).map((studName)=>studName.name);
+
+
+
+
+// console.log(display())
+
+
+
+
+
+//distraciting
+
+// let numbers=[4,3,4,5,6,7,7,5,4,3,3,4,54,5,6,66,6,6];
+
+// let dis=[dd ,cc , ...z]=numbers;
+
+// console.log(dis)
+
+//swap
+
+// var ami=90;
+// var jami=70;
+// [ami,jami]=[jami,ami]
+
+// console.log(jami)
+
+
+// const studentInfo={
+//   id:1,
+//   name:'animes barman',
+//   gpa:3.40,
+//   age:20
+// }
+
+
+// const {id, name, age}=studentInfo;
+
+// console.log(id)
+
+
+
+// const studentInfo=({fulName,id})=>{
+
+//   console.log(fulName,id);
+
+// }
+
+
+// const student={
+
+//   id:200,
+//   fulName:'Animes Barman',
+// }
+
+// studentInfo(student);
