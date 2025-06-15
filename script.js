@@ -1440,5 +1440,132 @@
 //== Synchronous vs Asynchronous
 
 
+// aSynchronous
+
+// console.log('task1')
+// console.log('task2')
+// setTimeout(() => {
+//   console.log('task3')
+// }, 2000);
+// console.log('task4')
+// console.log('task5')
+// console.log('task6')
+// console.log('task7')
+// console.log('task8')
 
 
+//callback and higher order function
+
+// function square(x){
+//   console.log(x*x);
+
+// }
+
+// // const y=square;
+
+// // y(300)
+
+// function higWoder(x,callback){
+
+//   callback(x);
+
+// }
+
+
+// higWoder(50,square)
+
+
+
+
+// const task1=(callback)=>{
+//   console.log('heloo1')
+//   callback();
+// }
+
+// const task2=(callback)=>{
+//   console.log('heloo2')
+//   callback()
+// }
+
+// setTimeout(() => {
+
+//   task2();
+  
+// }, 2000);
+// const task3=(callback)=>{
+//   console.log('heloo3')
+//   callback()
+// }
+// const task4=(callback)=>{
+//   console.log('heloo4')
+//   callback()
+// }
+// const task5=()=>{
+//   console.log('heloo6')
+// }
+// const task6=(callback)=>{
+//   console.log('heloo7')
+// }
+
+// task1(()=>{
+//   task2(()=>{
+//     task3(()=>{
+//       task4(()=>{
+//         task5(()=>{
+//           task6()
+//         })
+//       })
+//     })
+//   })
+// })
+
+
+
+// promise part-1
+
+// const  promise1=new Promise((res,rej)=>{
+
+//   const isPromise=true;
+
+//   setTimeout(() => {
+//     if(isPromise){
+//     res('promise 1 is resolve');
+//   }else{
+//     rej('promise 1 is not resolve')
+//   }
+    
+//   }, 2000);
+
+// })
+
+// const promise2=new Promise((res)=>{
+
+//   setTimeout(() => {
+//     res('promise2 is resolved')
+    
+//   }, 1000);
+// })
+
+
+// promise1.then((res)=>{
+//   console.log(res)
+// }).catch((err)=>{
+//   console.log(err)
+// })
+
+// promise2.then((res)=>{
+//   console.log(res);
+// })
+
+
+// Promise.all([promise1,promise2]).then((res)=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err)
+// })
+
+// Promise.race([promise1,promise2]).then((res)=>{
+//   console.log(res)
+// })
+
+//promise part-2 
