@@ -1569,3 +1569,88 @@
 // })
 
 //promise part-2 
+
+
+// const task1=()=>{
+//   return new Promise((res,rej)=>{
+//     res('task one is complated')
+//   })
+// }
+
+// const task2=()=>{
+//   return new Promise((res,rej)=>{
+//     rej('error task2')
+//   })
+// }
+// const task3=()=>{
+//   return new Promise((res,rej)=>{
+//     res('task 3 is complated')
+//   })
+// }
+// const task4=()=>{
+//   return new Promise((res,rej)=>{
+//     res('task 4 is complated')
+//   })
+// }
+
+// task1().then((res)=>{
+//   console.log(res);
+// })
+// .then(task2)
+// .then((res)=>{
+//   console.log(res)
+// })
+// .then(task3)
+// .then((res)=>{
+//   console.log(res)
+// })
+// .then(task4)
+// .then((res)=>{
+//   console.log(res);
+// })
+// .catch((err)=>{
+//   console.log(err)
+// })
+
+
+//  async await javascript
+
+
+// const task1=()=>{
+//   return new Promise((res,rej)=>{
+//     res('task one is complated')
+//   })
+// }
+
+// const task2=()=>{
+//   return new Promise((res,rej)=>{
+//     rej('error task2')
+//   })
+// }
+// const task3=()=>{
+//   return new Promise((res,rej)=>{
+//     res('task 3 is complated')
+//   })
+// }
+// const task4=()=>{
+//   return new Promise((res,rej)=>{
+//     res('task 4 is complated')
+//   })
+// }
+
+//  async function showAllTask(){
+
+//   try{
+//     const t1 = await task1();
+//   console.log(t1);
+//   const t2=await task2()
+//   console.log(t2)
+//   const t3=await task3()
+//   console.log(t3)
+//   }catch(e){
+//     console.log(e);
+//   }
+// }
+
+
+// showAllTask()
