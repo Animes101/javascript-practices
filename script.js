@@ -1659,58 +1659,129 @@
 
 // XMLHttpRequest--property--function
 
-const makeRequest=(method,url,data)=>{
+// const makeRequest=(method,url,data)=>{
   
-  const xhl=new XMLHttpRequest();
+//   const xhl=new XMLHttpRequest();
 
-  xhl.open(method,url);
+//   xhl.open(method,url);
 
-  xhl.setRequestHeader('Content-Type', 'application/json')
+//   xhl.setRequestHeader('Content-Type', 'application/json')
 
-  xhl.onload=()=>{
-    const data=xhl.response;
+//   xhl.onload=()=>{
+//     const data=xhl.response;
 
-    console.log(JSON.parse(data));
-  }
+//     console.log(JSON.parse(data));
+//   }
 
-  xhl.onerror=()=>{
-    console.log('error ')
-  }
+//   xhl.onerror=()=>{
+//     console.log('error ')
+//   }
 
-  xhl.send(JSON.stringify(data));
+//   xhl.send(JSON.stringify(data));
+
+// }
+
+
+// const getData=()=>{
+
+//   makeRequest('GET','https://fakestoreapi.com/products')
+// }
+
+
+// // getData()
+
+// const product = { title: 'New Product', price: 29.99 }
+
+// const sentData=()=>{
+//   makeRequest('POST',`https://fakestoreapi.com/products `,{
+//      title: 'New Product', price: 29.99
+//   })
+// }
+
+// // sentData();
+
+// const updateData=()=>{
+
+//   makeRequest('PUT',`https://fakestoreapi.com/products/${0}`,{
+//      title: 'Nefff Product', price: 29.99 
+//   })
+// }
+
+// // updateData();
+
+
+// const delitData=()=>{
+//   makeRequest('DELETE',`https://fakestoreapi.com/products/${1}`)
+// }
+// delitData()
+
+// calling api from javascript | fetch api
+
+
+
+const makeRequest= async(url,config)=>{
+
+
+   const res= await fetch(url,config)
+   if(!res.ok){
+    throw new Error `Error ${res.status}`
+   }
+   const data= await res.json()
+
+   return data
 
 }
 
+const getData=(url)=>{
+       makeRequest(url)
+       .then(res=>console.log(res))
+       .catch(e=> console.log(e));
 
-const getData=()=>{
-
-  makeRequest('GET','https://fakestoreapi.com/products')
 }
 
+getData('https://fakestoreapi.com/products')
 
-// getData()
 
-const product = { title: 'New Product', price: 29.99 }
+const sendData=(url)=>{
+  const product = { title: 'New Product', price: 29.59 };
+makeRequest(url,{
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(product)
+})
 
-const sentData=()=>{
-  makeRequest('POST',`https://fakestoreapi.com/products `,{
-     title: 'New Product', price: 29.99
-  })
+  .then(res=>console.log(res))
+  .catch(e=> console.log(e))
+
 }
 
-// sentData();
+sendData('https://fakestoreapi.com/products')
 
-const updateData=()=>{
 
-  makeRequest('PUT',`https://fakestoreapi.com/products/${0}`,{
-     title: 'Nefff Product', price: 29.99 
-  })
+const updateData=(url)=>{
+    const product2 = { title: 'Updated Product', price: 39.99 };
+makeRequest(url, {
+  method: 'PUT',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(product2)
+})
+.then(res=>console.log(res))
+  .catch(e=> console.log(e))
+
+
+  
 }
 
-// updateData();
+updateData(`https://fakestoreapi.com/products/${1}`)
+
+const deletProduct=(url)=>{
+    makeRequest(url, {
+  method: 'DELETE'
+})
+  .then(res=>console.log(res))
+  .catch(e=> console.log(e))
 
 
-const delitData=()=>{
-  makeRequest('DELETE',`https://fakestoreapi.com/products/${1}`)
 }
-delitData()
+
+deletProduct(`https://fakestoreapi.com/products/${1}`)
