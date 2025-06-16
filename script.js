@@ -1823,3 +1823,66 @@
 // axios.delete('https://fakestoreapi.com/products/2')
 // .then((res)=> console.log(res.data))
 // .catch((e)=> console.log(e))
+
+
+const callApi= async(config)=>{
+
+  return await axios(config);
+
+}
+
+// const getData=(url)=>{
+//   callApi(url)
+//   .then((res)=> console.log(res.data))
+//   .catch((e)=> console.log(e))
+// }
+
+// getData('https://fakestoreapi.com/products');
+
+
+// const product = { title: 'New Product', price: 29.99 };
+
+// const postData=(url)=>{
+//   callApi({
+//   url:url,
+//   method: 'POST',
+//   headers: { 'Content-Type': 'application/json' },
+//   body: JSON.stringify(product)
+// })
+// .then((res)=> console.log(res.data))
+// .catch((e)=> console.log(e))
+
+// }
+
+// postData('https://fakestoreapi.com/products')
+
+// const product2 = { title: 'Updated Product', price: 39.99 };
+// const updateData=(url)=>{
+
+//   callApi({
+//   url:url,
+//   method: 'PUT',
+//   headers: { 'Content-Type': 'application/json' },
+//   body: JSON.stringify(product2)
+// })
+//   .then((res)=> console.log(res.data))
+//   .catch((e)=> console.log(e));
+
+// }
+
+// updateData(`https://fakestoreapi.com/products/${1}`)
+
+
+
+// const delitData=(url)=>{
+//   callApi({
+//     url:url,
+//     method: 'DELETE'
+
+//   })
+//   .then((res)=>console.log(res.data))
+//   .catch((e)=> console.log(e))
+  
+// }
+
+// delitData(`https://fakestoreapi.com/products/${4}`)
