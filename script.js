@@ -1719,69 +1719,107 @@
 
 
 
-const makeRequest= async(url,config)=>{
+// const makeRequest= async(url,config)=>{
 
 
-   const res= await fetch(url,config)
-   if(!res.ok){
-    throw new Error `Error ${res.status}`
-   }
-   const data= await res.json()
+//    const res= await fetch(url,config)
+//    if(!res.ok){
+//     throw new Error `Error ${res.status}`
+//    }
+//    const data= await res.json()
 
-   return data
+//    return data
 
-}
+// }
 
-const getData=(url)=>{
-       makeRequest(url)
-       .then(res=>console.log(res))
-       .catch(e=> console.log(e));
+// const getData=(url)=>{
+//        makeRequest(url)
+//        .then(res=>console.log(res))
+//        .catch(e=> console.log(e));
 
-}
+// }
 
-getData('https://fakestoreapi.com/products')
-
-
-const sendData=(url)=>{
-  const product = { title: 'New Product', price: 29.59 };
-makeRequest(url,{
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(product)
-})
-
-  .then(res=>console.log(res))
-  .catch(e=> console.log(e))
-
-}
-
-sendData('https://fakestoreapi.com/products')
+// getData('https://fakestoreapi.com/products')
 
 
-const updateData=(url)=>{
-    const product2 = { title: 'Updated Product', price: 39.99 };
-makeRequest(url, {
-  method: 'PUT',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(product2)
-})
-.then(res=>console.log(res))
-  .catch(e=> console.log(e))
+// const sendData=(url)=>{
+//   const product = { title: 'New Product', price: 29.59 };
+// makeRequest(url,{
+//   method: 'POST',
+//   headers: { 'Content-Type': 'application/json' },
+//   body: JSON.stringify(product)
+// })
+
+//   .then(res=>console.log(res))
+//   .catch(e=> console.log(e))
+
+// }
+
+// sendData('https://fakestoreapi.com/products')
+
+
+// const updateData=(url)=>{
+//     const product2 = { title: 'Updated Product', price: 39.99 };
+// makeRequest(url, {
+//   method: 'PUT',
+//   headers: { 'Content-Type': 'application/json' },
+//   body: JSON.stringify(product2)
+// })
+// .then(res=>console.log(res))
+//   .catch(e=> console.log(e))
 
 
   
-}
+// }
 
-updateData(`https://fakestoreapi.com/products/${1}`)
+// updateData(`https://fakestoreapi.com/products/${1}`)
 
-const deletProduct=(url)=>{
-    makeRequest(url, {
-  method: 'DELETE'
-})
-  .then(res=>console.log(res))
-  .catch(e=> console.log(e))
+// const deletProduct=(url)=>{
+//     makeRequest(url, {
+//   method: 'DELETE'
+// })
+//   .then(res=>console.log(res))
+//   .catch(e=> console.log(e))
 
 
-}
+// }
 
-deletProduct(`https://fakestoreapi.com/products/${1}`)
+// deletProduct(`https://fakestoreapi.com/products/${1}`)
+
+
+
+
+// calling api from javascript | axios api
+
+
+// axios.get('https://fakestoreapi.com/products')
+// .then((res)=> console.log(res.data))
+// .catch((e)=>console.log(e))
+
+
+// const product = { title: 'New Product', price: 29.99 }
+
+// axios.post('https://fakestoreapi.com/products',
+//   {
+//   method: 'POST',
+//   headers: { 'Content-Type': 'application/json' },
+//   body: JSON.stringify(product)
+
+// })
+// .then((res)=> console.log(res.data))
+// .catch((e)=> console.log(e))
+
+// const product2 = { title: 'Updated Product', price: 39.99 };
+// axios.put(`https://fakestoreapi.com/products/${5}`,{
+//   method: 'PUT',
+//   headers: { 'Content-Type': 'application/json' },
+//   body: JSON.stringify(product2)
+
+// })
+// .then((res)=> console.log(res.data))
+// .catch((e)=> console.log(e))
+
+
+// axios.delete('https://fakestoreapi.com/products/2')
+// .then((res)=> console.log(res.data))
+// .catch((e)=> console.log(e))
