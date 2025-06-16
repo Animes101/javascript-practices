@@ -1654,3 +1654,63 @@
 
 
 // showAllTask()
+
+
+
+// XMLHttpRequest--property--function
+
+const makeRequest=(method,url,data)=>{
+  
+  const xhl=new XMLHttpRequest();
+
+  xhl.open(method,url);
+
+  xhl.setRequestHeader('Content-Type', 'application/json')
+
+  xhl.onload=()=>{
+    const data=xhl.response;
+
+    console.log(JSON.parse(data));
+  }
+
+  xhl.onerror=()=>{
+    console.log('error ')
+  }
+
+  xhl.send(JSON.stringify(data));
+
+}
+
+
+const getData=()=>{
+
+  makeRequest('GET','https://fakestoreapi.com/products')
+}
+
+
+// getData()
+
+const product = { title: 'New Product', price: 29.99 }
+
+const sentData=()=>{
+  makeRequest('POST',`https://fakestoreapi.com/products `,{
+     title: 'New Product', price: 29.99
+  })
+}
+
+// sentData();
+
+const updateData=()=>{
+
+  makeRequest('PUT',`https://fakestoreapi.com/products/${0}`,{
+     title: 'Nefff Product', price: 29.99 
+  })
+}
+
+// updateData();
+
+
+const delitData=()=>{
+  makeRequest('DELETE',`https://fakestoreapi.com/products/${1}`)
+}
+delitData()
